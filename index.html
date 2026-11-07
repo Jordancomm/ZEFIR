@@ -45,6 +45,8 @@
       height: 75px;
       width: 100%;
       background: hotpink;
+
+      position: relative;
     }
     nav li {
       color: #fff;
@@ -70,7 +72,7 @@
       white-space: nowrap;
       overflow: auto;
     }
-    nav ul::before {
+    nav::before {
       content: '<';
       position: absolute;
       left: -5px;
@@ -86,7 +88,7 @@
       text-align: center;
       font-weight: bold;
     }
-    nav ul::after {
+    nav::after {
       content: '>';
       position: absolute;
       right: -5px;
