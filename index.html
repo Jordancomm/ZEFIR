@@ -35,6 +35,11 @@
       height: 50px;
       width: 100%;
     }
+    #header-nav-menu {
+      display: none;
+    }
+
+    
     #header-slider {
       height: calc(200px - 50px);
       width: 100%;
@@ -132,23 +137,7 @@
       line-height: 37px;
     }
 
-    #header-nav-menu {
-      width: 40px;
-      height: 40px;
-      background: pink;
-      float: right;
-      border-radius: 50px;
-      margin-top: 5px;
-      margin-right: 5px;
-
-      display: none;
-    }
-    #header-nav-btn {
-      line-height: 40px;
-      color: #fff;
-      text-align: center;
-      font-size: 18px;
-    }
+    
 
     #header-logo {
       text-align: center;
@@ -234,9 +223,22 @@ section {
   <style>
   @media (orientation: portrait) {
     #header-nav-menu {
+      width: 40px;
+      height: 40px;
+      background: pink;
+      float: right;
+      border-radius: 50px;
+      margin-top: 5px;
+      margin-right: 5px;
       display: initial;
-  }
-  #header-slider-l {
+    }
+    #header-nav-btn {
+      line-height: 40px;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+    }
+    #header-slider-l {
       width: 50px;
       display: inline-block;
       vertical-align: top;
