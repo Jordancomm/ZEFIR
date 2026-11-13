@@ -71,8 +71,8 @@
 /* * * * * * NAVIGATION * * * * * */
     
     nav {
+      margin: 0 auto;
       margin-bottom: 10px;
-      border-radius: 24px;
       position: relative;
 
       background: hotpink;
@@ -97,38 +97,6 @@
       padding: 10px 15px;
       white-space: nowrap;
       overflow: auto;
-    }
-    nav::before {
-      content: '<';
-      position: absolute;
-      left: -5px;
-      top: 0;
-      bottom: 0;
-      width: 30px;
-      height: 30px;
-      border-radius: 30px;
-      background: lightpink;
-      color: white;
-      margin: auto;
-      line-height: 30px;
-      text-align: center;
-      font-weight: bold;
-    }
-    nav::after {
-      content: '>';
-      position: absolute;
-      right: -5px;
-      top: 0;
-      bottom: 0;
-      width: 30px;
-      height: 30px;
-      border-radius: 30px;
-      background: lightpink;
-      color: white;
-      margin: auto;
-      line-height: 30px;
-      text-align: center;
-      font-weight: bold;
     }
     nav li span {
       display: inline-block;
@@ -262,6 +230,41 @@ section {
       display: inline-block;
       vertical-align: top;
     }
+
+
+    nav::before {
+      content: '<';
+      position: absolute;
+      left: -5px;
+      top: 0;
+      bottom: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      background: lightpink;
+      color: white;
+      margin: auto;
+      line-height: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+    nav::after {
+      content: '>';
+      position: absolute;
+      right: -5px;
+      top: 0;
+      bottom: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      background: lightpink;
+      color: white;
+      margin: auto;
+      line-height: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+
   </style>
   
 </head>
