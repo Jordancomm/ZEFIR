@@ -166,6 +166,9 @@
 
       width: max-content;
       min-width: 100%;
+
+      overflow: visible !important;
+      transform: none !important;
     }
     .widgets-sld::before {
       content: "";
@@ -206,9 +209,19 @@
 
       contain: inline-size;
       width: 1px;
-      background: pink;
+/*      background: pink;
       border-radius: 16px;
-      flex-basis: calc(100vw - 30px);
+      flex-basis: calc(100vw - 30px);*/
+    }
+    .widget-content {
+      position: sticky;
+      left: 0;
+      background: pink;
+      right: 0;
+      width: calc(100vw - 30px);
+      border-radius: 16px;
+      box-sizing: border-box;
+      padding: 10px;
     }
 
 /* * * * * * ARTICLE-SECTION * * * * * */
@@ -355,15 +368,21 @@ section {
         <div class='widgets-sld'>
           <div class='widget'>
             <div class='widget-title'>Бухгалтерия</div>
-            <div class='widget-body'>Text 1</div>
+            <div class='widget-body'>
+              <div class='widget-content'>Text 1</div>
+            </div>
           </div>
           <div class='widget'>
             <div class='widget-title'>Налогообложения</div>
-            <div class='widget-body'>Text 2</div>
+            <div class='widget-body'>
+              <div class='widget-content'>Text 2</div>
+            </div>
           </div>
           <div class='widget'>
             <div class='widget-title'>1C8.3</div>
-            <div class='widget-body'>Text 3</div>
+            <div class='widget-body'>
+              <div class='widget-content'>Text 3</div>
+            </div>
           </div>
         </div>
         </div>
