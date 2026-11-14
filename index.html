@@ -136,6 +136,13 @@
       box-sizing: border-box;
       padding-left: 10px;
     }
+
+    .widgets-box {
+      width: 100%;
+      overflow: auto;
+      padding: 0 10px;
+    }  
+    
     .widgets-sld {
 
       padding: 5px 0px;
@@ -155,6 +162,9 @@
 
       position: relative;
       z-index: 0;
+
+      width: max-content;
+      min-width: 100%;
     }
     .widgets-sld::before {
       content: "";
@@ -192,6 +202,12 @@
       flex-basis: 100%;
       width: 100%;
       box-sizing: border-box;
+
+      contain: inline-size;
+      width: 1px;
+      background: pink;
+      border-radius: 16px;
+      flex-basis: calc(100vw - 20px);
     }
 
 /* * * * * * ARTICLE-SECTION * * * * * */
@@ -334,6 +350,7 @@ section {
     <aside>
       <div class="widgets">
         <div class="widgets-title">Категории</div>
+        <div class='widgets-box'>
         <div class='widgets-sld'>
           <div class='widget'>
             <div class='widget-title'>Бухгалтерия</div>
@@ -347,6 +364,7 @@ section {
             <div class='widget-title'>1C8.3</div>
             <div class='widget-body'>Text 3</div>
           </div>
+        </div>
         </div>
       </div>
     </aside>
