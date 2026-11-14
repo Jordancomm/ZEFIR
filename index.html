@@ -141,8 +141,8 @@
       padding: 5px 0px;
       width: calc(100% - 20px);
       margin: 0 auto;
-      border-radius: 30px;
-      background: pink;
+/*      border-radius: 30px;
+      background: pink;*/
       margin-top: 5px;
 
       white-space: nowrap;
@@ -153,6 +153,20 @@
       row-gap: 10px;
       align-items: flex-start;
     }
+    .widgets-sld::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #ffe4a1;
+      z-index: -1;
+      top: 0;
+      border-radius: 30px;
+      --lh: 1.20;
+      height: calc(var(--lh) * 1em + 20px);
+      height: calc(1lh + 20px);
+    }
+    
     .widget {
       display: contents;
     }
