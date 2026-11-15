@@ -188,6 +188,7 @@
       overflow: auto;
 
       display: flex;
+      display: block;
       flex-wrap: wrap;
       row-gap: 10px;
       align-items: flex-start;
@@ -201,25 +202,7 @@
       overflow: visible !important;
       transform: none !important;
     }
-
-/*    .widgets-sld::before {*/
-    .widgets::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      background: #ffe4a1;
-      z-index: -1;
-      top: 0;
-      border-radius: 30px;
-      --lh: 1.20;
-      height: calc(var(--lh) * 1em + 20px);
-      height: calc(1lh + 20px);
-
-      left: 10px;
-      right: 10px;
-      top: 45px;
-    }
+    
     
     .widget {
       display: contents;
@@ -384,8 +367,27 @@
     section {
       width: calc(100% - 20px);
     }
-    
 
+    .widgets::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #ffe4a1;
+      z-index: -1;
+      top: 0;
+      border-radius: 30px;
+      --lh: 1.20;
+      height: calc(var(--lh) * 1em + 20px);
+      height: calc(1lh + 20px);
+
+      left: 10px;
+      right: 10px;
+      top: 45px;
+    }
+    .widgets-sld {
+      display: flex;
+    }
     
   </style>
   
