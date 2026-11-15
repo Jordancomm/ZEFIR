@@ -226,9 +226,11 @@
       flex-basis: 100%;
       width: 100%;
       box-sizing: border-box;
-
+/*
       contain: inline-size;
       width: 1px;
+*/
+      
 /*      background: pink;
       border-radius: 16px;
       flex-basis: calc(100vw - 30px);*/
@@ -388,7 +390,10 @@
     .widgets-sld {
       display: flex;
     }
-    
+    .widget-body {
+      contain: inline-size; 
+      width: 1px;
+    }
   </style>
   
 </head>
